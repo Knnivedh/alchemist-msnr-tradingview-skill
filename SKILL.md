@@ -2,7 +2,7 @@
 
 ## What this skill is and what it cannot do
 
-- This skill teaches you to reproduce the Alchemist MSNR chart drawing in TradingView, from the 34 page image only playbook by Satya Alchemist (@SATYA666.SS, Telegram @MSNRPDF1) and from the worked gold example that was drawn through passes P0 to P8 in November 2026.
+- This skill teaches you to reproduce the Alchemist MSNR chart drawing in TradingView, from the 34 page image only playbook by Satya Alchemist (@SATYA666.SS, Telegram @MSNRPDF1) and from the worked gold example that was drawn through passes P0 to P9 in November 2026.
 
 - This skill transfers the method only, which means the rules, the exact values, the procedures, and the verification steps.
 
@@ -63,6 +63,33 @@
 - The CRT high comes from the upper wick of the tall Monday 17 Aug candle at about 12:00 to 14:00, and the CRT low comes from the lower wick of the Tuesday 18 Aug candle at about 05:00.
 
 - The APEX band left edge comes from the turtle sweep low candle on Wednesday 19 Aug at about 05:00.
+
+## OCL (Open Close Level) — from the TradeW Mafia Part 4 video
+
+- OCL is the Open Close Level, from the video "MSNR OCL LEVEL Explained! | PART 4" by TradeW Mafia, 23 Nov 2026, 15:31. OCL is a single thin horizontal line at a candle's close, where the next candle opens — the gap between one candle's close and the next candle's open. The video also calls it a "gap level". Bullish: candle closes, next candle opens above the close, and the line through that close/open boundary is support. Bearish is the mirror image, resistance.
+- The level is valid whether or not a turtle sweep (TS) of the previous candle happened — a body close alone makes it valid, and no TS is required. If a TS did happen, you take the V level instead; OCL is the fallback when there is no TS.
+- "Every level has an OCL level" — the A level (Classic A resistance) is also an OCL by this rule. OCL is a property of every level, not a separate parallel level type, which corrects the PDF's taxonomy where OCL was only named in the pages 29 to 34 entry-model list with no definition.
+- The video's only concrete HTF to LTF procedure: mark the HTF OCL (5 minute), drop to 3 minute and 1 minute, and mark the A, V, OCL and CE levels inside it. The PDF never shows this drop.
+- Confluence: OCL plus SBR or RBS is the video's "sniper entry" setup, and OCL plus FVG plus LTF CE is the triple confluence. A broken OCL that retests and continues is an OCL flip, playing as RBS.
+- The video names no instrument prices for the August chart: its worked examples are all XAUUSD on Friday 20 Nov 2026 (OCLs around 3,545.5, 3,590.6, 3,582.4, 3,554.07, 3,553.02, 3,547.5, 3,580.12, 3,579.9, and one failed support OCL around 3,561.5). Those prices must not be carried onto the August chart.
+- Blocker: no OCL price can be computed for the August chart from this skill's values, because the skill records wick-based numbers only (CRT high/low, CE), while OCL needs candle closes and opens. The workspace has no Aug 2026 OHLC data. To draw an OCL on the August chart, read the closes and opens from the TradingView Data Window for 17 to 20 Aug 2026 first. On 24 hour gold the next open usually equals the prior close, so the video's "gap" usually reads as a close-price line, not a visible gap.
+- The video gives no entry, stop, target, risk to reward, position size, backtest, or win rate, and its "100 pips or around 150 pips" claim is unverifiable. Its "I guarantee you will be profitable" claim is unproven — do not repeat it.
+- Terms the video speaks but never defines, so do not use them: "PUI", "FP / FP LP", "FEG" (probably FVG, unconfirmed), "C" level, and the OCL validity condition mentioned at about 13:10 but truncated in the transcript.
+- Full reports: workspace/research_notes/msnr-ocl-agent1-transcript-ocl-definition.md, msnr-ocl-agent2-chart-drawing.md, msnr-ocl-agent3-new-concepts-implementation.md, and the deep research at workspace/research_notes/msnr-ocl-level-part4-20261123-0636/.
+
+## Wick anchoring — pinpoint, not a full line
+
+- Rule: every line starts at the exact wick where the change happened. The line's left end IS the wick tip of its defining candle. Never start a line at an arbitrary bar, and never draw a full-width line and call it anchored.
+- The defining wick for each key line (gold example):
+  - CRT high / ERL 4,395.00 — upper wick of the tall Monday 17 Aug candle, about 12:00 to 14:00.
+  - CRT low 4,311.31 — lower wick of the Tuesday 18 Aug candle, about 05:00. The PDF's dotted line literally starts at that wick.
+  - CE 50 percent 4,353.16 — computed from the range, so it starts at the left edge of the CRT range (the CRT high candle), not mid-chart.
+  - APEX CE 4,333.78 — starts at the turtle sweep low candle, Wednesday 19 Aug at about 05:00, the same candle as the APEX band left edge.
+  - BUY 4,336.09, SL 4,337.55, TP 4,445.19, TP 4,449.71 — execution lines on the M5 page; their left ends sit on the M5 candles where the trade was placed and where the wicks touched, not on the 1H candles.
+- TradingView procedure: type the exact price in Settings first, then drag the on-chart handle so the line's left end sits exactly on the wick tip. Horizontal lines expose no bar or date field in Settings, so the handle position is the only anchor — there is no numeric way to set it.
+- Label rule: the text on a line must say exactly what the line is, as "<name> <price>", for example "CRT high 4395.00", "CRT low 4311.31", "CE 4353.16", "APEX CE 4333.78", "BUY 4336.09", "SL 4337.55", "TP 4449.71". No abbreviations, no extra words, and the price in the label must match Settings exactly.
+- Verification: add a fourth check to the three-way check — a fresh screenshot must show the line starting at the named wick candle, zoomed in on that candle. A line whose left end floats in empty space fails, even if its price is exact.
+- Honest status: as of the P9 check on 23 Nov 2026, the ERL and CRT low wick anchors are still unverified — the handles were never dragged to those wicks. The prices are exact; the pinpoint anchors are not. This procedure is the fix for that gap, not a claim that it is already done.
 
 - The eight key lines below are exact in TradingView Settings, and they were re-measured from Settings with the drawn tags agreeing in the P5 pass.
 
@@ -333,7 +360,7 @@
 
 - "Clear all drawings" does not remove indicators, so hiding them is a separate step from clearing the drawings.
 
-- Candles are black, both up and down, like the PDF, and the labels are size 12 bold, which is visibly larger than the PDF labels at about size 10 to 11, so do not go larger, and consider size 11 for the three centre labels, because SL, BUY, and APEX sit only 1.46 to 2.31 apart and crowd each other.
+- Candles are black and white, because the user could not tell up from down when both were black: up candles are a white body with a black border, down candles are a solid black body, and wicks are black for both. This was changed and saved on the Aug layout on 23 Nov 2026. The PDF itself uses black and white candles, so this matches it. The labels are size 12 bold, which is visibly larger than the PDF labels at about size 10 to 11, so do not go larger, and consider size 11 for the three centre labels, because SL, BUY, and APEX sit only 1.46 to 2.31 apart and crowd each other.
 
 - The line chart fallback works for the higher timeframe view, because the PDF uses line charts on pages 10 to 16, but it cannot carry the CRT range on gold, because that needs candle high and low.
 
@@ -382,13 +409,14 @@
 
 - The comparison method is six side by side images, which are the full overview, the centre cluster, the TP area, the Fib Circle, the definition boxes, and the STDV and quarterly area, each scored out of 10, then averaged.
 
-- The measured scores were P6 at 5.5 out of 10, with overview 6, centre 5, TP 8, Fib 5, boxes 5, and STDV and quarterly 4, and P7 at 5.8 out of 10, with overview 6, centre 6, TP 8, Fib 6, boxes 5, and STDV and quarterly 4, and P8 at 6.5 out of 10, with overview 6.5, centre 7, TP 8, Fib 6, boxes 5.5, and STDV and quarterly 6.
+- The measured scores were P6 at 5.5 out of 10, with overview 6, centre 5, TP 8, Fib 5, boxes 5, and STDV and quarterly 4, and P7 at 5.8 out of 10, with overview 6, centre 6, TP 8, Fib 6, boxes 5, and STDV and quarterly 4, and P8 at 6.5 out of 10, with overview 6.5, centre 7, TP 8, Fib 6, boxes 5.5, and STDV and quarterly 6, and P9 at 6.8 out of 10, with overview 7, centre 7, TP 8, Fib 7, boxes 6, and STDV and quarterly 6.
 
 - The TP area scores best at 8 out of 10 in every pass, and the definition boxes score worst at 5.5 out of 10 in P8, after the STDV and quarterly area scored worst at 4 out of 10 in P6 and P7.
 
 - A four agent audit of the early redraw against the PDF found text at 133 items with 0 exact, 12 partial, and 121 missing, and geometry at 204 items with 0 exact, 11 wrong, and 193 missing, which shows how far a first attempt can be even when the prices feel right.
 
 - The known leftovers after P8, ranked by visual impact for the next pass, are: the definition boxes still overlap, with [SINGLE L/Q] on the Premium box, RESIS/.T DAILY on the Premium box, the Q2 Transition and Discount Zone boxes overlapping at the corner, and [KEY SELL MISS ENTRY] on the High Risk Confirmation box edge, and the P8 claim that the boxes were "verified non-overlapping in the narrow view" is contradicted by the P8 comparison images, which show the overlaps in both views, so re-verify with a fresh screenshot before calling the spacing done; the yellow accumulation parallelograms still not done correctly, with the one Rotated Rectangle as a thin green diagonal on the wrong leg and no second parallelogram; the Fib arcs still near vertical in the narrow frame, and radii 400 and 600 both fail there, so fix the geometry, not the radius, by trying the wide Aug 12 to 20 view for the comparison or the Arc tool instead of the Fib Circle tool; the circle bars finished in P8 but with no DAILY CIRCLE, 90M CIRCLE, or MACRO labels and the Q2/.M dot not centred under segment 2; the red step-line too small to read, with the PDF version a long red line with a spike at the right end; FS+ still partly hidden behind a 19 Aug candle; the minus 4 and minus 3.5 STDV marks still absent; the quarter boxes still clipped at the right edge in the narrow view; and the M5 view for 19 Aug still blocked by the Basic plan.
+- P9 verification check on 23 Nov 2026 (browser read of the chart, no P9 completion report ever arrived): the two yellow parallelograms ARE now present as pale yellow Rotated Rectangles, the boxes do NOT overlap each other in the narrow view centred on 18 Aug, [SINGLE L/Q] and RESIS/.T DAILY are clear of the Premium box, FS+ is clear, and the black/white candle fix is saved. Still failing: candles run through the Premium box and the Discount Zone's left edge, KEY SELL and HTF KEY REJECTION labels overlap the High Risk Confirmation box text, the grey Fib arcs still read as near-vertical (anchors 4,724.29 / 3,924.29, only 24 bars apart), the red step-line could not be confirmed as three segments at 4,336 / 4,337 / 4,338, and the 90M CIRCLE / MACRO labels and the black "● Q2/.M" dot under segment 2 were not seen. The P9 comparison then measured 6.8 out of 10 overall (overview 7, centre 7, TP 8, Fib 7, boxes 6, STDV and quarterly 6), up from P8's 6.5, and it corrected two of the verification claims: the 3 Arc-tool shallow arcs ARE in the Object Tree, and DAILY CIRCLE / 90M CIRCLE / MACRO labels are all three visible. It also found both the arcs AND the Fib Circle present at once, which the P9 brief said never to leave, and the "● Q2/.M" dot lost entirely — not visible in any screenshot or in the Object Tree. The Object Tree text count came back as 39, which shows the earlier 21 and 23 counts were never reliable, because the tree only loads part of itself at a time. The ranked P10 fix list is: pick ONE Fib geometry and remove the other (keep the shallow arcs, delete or hide the Fib Circle); restore the Q2/.M dot centred under segment 2; finish the boxes so no candle or label crosses any box text and nothing clips at the right edge, verified in narrow AND wide views; step-line as the PDF's long red line with the spike at the right end; verify STDV ticks −2.5 / −2 / −1 / 0; draw the TRANDLINE diagonal; wick anchors via handle-drag plus screenshot.
 
 ## Hard limits
 
@@ -444,7 +472,7 @@
 
 - The redraw verification sheet is at workspace/research_notes/alchemist-tradingview-redraw-checklist.md.
 
-- The P7 comparison report is at workspace/research_notes/alchemist-comparison/final/p7-comparison-report.md, with the P6 comparison at workspace/research_notes/alchemist-comparison/final/p6-comparison-report.md, and the P8 comparison report at workspace/research_notes/alchemist-comparison/final/p8-comparison-report.md, which measured 6.5 out of 10 overall, up from 5.8 at P7, with the biggest single-pass gain since P5, driven by the circle bars, the red step-line, and the restored STDV low end.
+- The P7 comparison report is at workspace/research_notes/alchemist-comparison/final/p7-comparison-report.md, with the P6 comparison at workspace/research_notes/alchemist-comparison/final/p6-comparison-report.md, and the P8 comparison report at workspace/research_notes/alchemist-comparison/final/p8-comparison-report.md, which measured 6.5 out of 10 overall, up from 5.8 at P7, with the biggest single-pass gain since P5, driven by the circle bars, the red step-line, and the restored STDV low end. The P9 comparison report at workspace/research_notes/alchemist-comparison/final/p9-comparison-report.md measured 6.8 out of 10 overall, up from P8's 6.5, driven by the black and white candles, the re-spaced boxes, both yellow parallelograms, and the shallow Arc-tool arcs.
 
 - The TP audit is at workspace/research_notes/alchemist-tp-audit.md, the text and colour audit is at workspace/research_notes/alchemist-text-colour-audit-p4.md, the missing items audit is at workspace/research_notes/alchemist-missing-audit-p4.md, and the Fib, STDV, and quarterly re-check is at workspace/research_notes/alchemist-fib-stdv-quarterly-p4.md.
 
