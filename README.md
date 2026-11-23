@@ -1,12 +1,12 @@
 # Alchemist MSNR TradingView Drawing Skill
 
-A deep, honest skill for reproducing the Alchemist MSNR chart drawing in TradingView, built from a 34-page image-only playbook by Satya Alchemist (@SATYA666.SS) and from the worked gold example that was drawn through eight passes (P0–P8) in November 2026.
+A deep, honest skill for reproducing the Alchemist MSNR chart drawing in TradingView, built from a 34-page image-only playbook by Satya Alchemist (@SATYA666.SS) and from the worked gold example that was drawn through nine passes (P0–P9) in November 2026.
 
 ## What it is
 
 - `SKILL.md` teaches the method: Candle Range Theory plus CE (one reference candle's high/low is the range, CE is its 50%), premium/discount, APEX CE, zones captured by confluence, and validation by price reaction only.
 - It gives the worked gold example (XAUUSD, 17–20 Aug 2026) with every key line at its exact verified price, the Fib Circle and STDV procedures as they were actually done in TradingView, the circle bars, the definition boxes in the PDF's own verbatim wording, the structure labels, and the verification method used to score the drawing.
-- It is scored honestly: the drawing measured 5.5/10 after P6, 5.8/10 after P7, and 6.5/10 after P8 (overview 6.5, centre 7, TP 8, Fib 6, boxes 5.5, STDV/quarterly 6), and the honest ceiling is about 9/10, not 10. P9 is in progress on the top-ranked P8 leftovers — the definition boxes still overlapping, the yellow parallelograms, and the Fib curvature.
+- It is scored honestly: the drawing measured 5.5/10 after P6, 5.8/10 after P7, 6.5/10 after P8 (overview 6.5, centre 7, TP 8, Fib 6, boxes 5.5, STDV/quarterly 6), and 6.8/10 after P9 (overview 7, centre 7, TP 8, Fib 7, boxes 6, STDV/quarterly 6), and the honest ceiling is about 9/10, not 10. P9's gains came from the black-and-white candles, the re-spaced definition boxes, both yellow parallelograms built properly, and the shallow Arc-tool arcs; still open are the Fib Circle left in place alongside the arcs, the lost Q2/.M dot, boxes still colliding with candles in the wide view, and the step-line still not matching the PDF's long red line with a spike.
 
 ## What it cannot do
 
