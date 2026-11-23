@@ -6,7 +6,7 @@ A deep, honest skill for reproducing the Alchemist MSNR chart drawing in Trading
 
 - `SKILL.md` teaches the method: Candle Range Theory plus CE (one reference candle's high/low is the range, CE is its 50%), premium/discount, APEX CE, zones captured by confluence, and validation by price reaction only.
 - It gives the worked gold example (XAUUSD, 17–20 Aug 2026) with every key line at its exact verified price, the Fib Circle and STDV procedures as they were actually done in TradingView, the circle bars, the definition boxes in the PDF's own verbatim wording, the structure labels, and the verification method used to score the drawing.
-- It is scored honestly: the drawing measured 5.5/10 after P6 and 5.8/10 after P7, and the honest ceiling is about 9/10, not 10.
+- It is scored honestly: the drawing measured 5.5/10 after P6, 5.8/10 after P7, and 6.5/10 after P8 (overview 6.5, centre 7, TP 8, Fib 6, boxes 5.5, STDV/quarterly 6), and the honest ceiling is about 9/10, not 10. P9 is in progress on the top-ranked P8 leftovers — the definition boxes still overlapping, the yellow parallelograms, and the Fib curvature.
 
 ## What it cannot do
 
@@ -49,7 +49,9 @@ The FVG + IRL zone is a grey rectangle from 4,353.16 down to 4,333.78, the blue 
 ├── .gitignore
 └── references/
     ├── alchemist-pdf-merged-report.md        # merged analysis of the 34-page PDF
-    └── alchemist-tradingview-redraw-checklist.md  # redraw verification sheet
+    ├── alchemist-tradingview-redraw-checklist.md  # redraw verification sheet
+    ├── razyxh-pdf-merged-report.md           # merged analysis of the second MSNR PDF (TraFx_Trade, Oct 2026)
+    └── neat-drawing-skill.md                 # the neat, accurate drawing skill learned from the second PDF
 ```
 
 ## The source PDF
@@ -60,8 +62,9 @@ The 34-page source PDF is **not** included in this repository. It is the creator
 
 - Merged PDF analysis: `references/alchemist-pdf-merged-report.md` (per-chunk reports for pages 1–9, 10–17, 18–25, 26–34 are cited in `SKILL.md`)
 - Redraw verification sheet: `references/alchemist-tradingview-redraw-checklist.md`
-- P7 comparison report, TP audit, text/colour audit, missing-items audit, and Fib/STDV/quarterly re-check are cited by path in `SKILL.md` under "Sources"
-- Second MSNR PDF (TraFx_Trade, Oct 2026) merged report: cited in `SKILL.md`; it is a second worked example only, not the primary example
+- P7 comparison report, P8 comparison report (6.5/10 overall), TP audit, text/colour audit, missing-items audit, and Fib/STDV/quarterly re-check are cited by path in `SKILL.md` under "Sources"
+- Second MSNR PDF (TraFx_Trade, Oct 2026) merged report: `references/razyxh-pdf-merged-report.md` — silver sell 71.143 → 54.604, gold ladder short to ERL 3,976.17, and the two HTF→LTF ladders in words; it is a second worked example, not the primary one
+- Neat drawing skill sheet: `references/neat-drawing-skill.md` — the copyable neatness system from the second PDF: 0–8 labels per chart, one zone per page, dotted/solid/dashed grammar, yellow zone, red dot touch, X invalidation, green tick validation
 
 ## License
 

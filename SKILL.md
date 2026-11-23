@@ -382,13 +382,13 @@
 
 - The comparison method is six side by side images, which are the full overview, the centre cluster, the TP area, the Fib Circle, the definition boxes, and the STDV and quarterly area, each scored out of 10, then averaged.
 
-- The measured scores were P6 at 5.5 out of 10, with overview 6, centre 5, TP 8, Fib 5, boxes 5, and STDV and quarterly 4, and P7 at 5.8 out of 10, with overview 6, centre 6, TP 8, Fib 6, boxes 5, and STDV and quarterly 4.
+- The measured scores were P6 at 5.5 out of 10, with overview 6, centre 5, TP 8, Fib 5, boxes 5, and STDV and quarterly 4, and P7 at 5.8 out of 10, with overview 6, centre 6, TP 8, Fib 6, boxes 5, and STDV and quarterly 4, and P8 at 6.5 out of 10, with overview 6.5, centre 7, TP 8, Fib 6, boxes 5.5, and STDV and quarterly 6.
 
-- The TP area scores best at 8 out of 10, and the STDV and quarterly area scores worst at 4 out of 10 in both passes.
+- The TP area scores best at 8 out of 10 in every pass, and the definition boxes score worst at 5.5 out of 10 in P8, after the STDV and quarterly area scored worst at 4 out of 10 in P6 and P7.
 
 - A four agent audit of the early redraw against the PDF found text at 133 items with 0 exact, 12 partial, and 121 missing, and geometry at 204 items with 0 exact, 11 wrong, and 193 missing, which shows how far a first attempt can be even when the prices feel right.
 
-- The known leftovers after P8 are the yellow accumulation parallelograms still not done correctly, the Fib arcs still near vertical in the narrow frame, the Q2/.M dot not centred under segment 2, the STDV bar and date discrepancy at bar minus 1260, the FS+ day move unverified against the PDF, the circle bar label overlapping the 90M bar border, the minus 4 and minus 3.5 STDV marks still absent, and the M5 view for 19 Aug still blocked by the Basic plan.
+- The known leftovers after P8, ranked by visual impact for the next pass, are: the definition boxes still overlap, with [SINGLE L/Q] on the Premium box, RESIS/.T DAILY on the Premium box, the Q2 Transition and Discount Zone boxes overlapping at the corner, and [KEY SELL MISS ENTRY] on the High Risk Confirmation box edge, and the P8 claim that the boxes were "verified non-overlapping in the narrow view" is contradicted by the P8 comparison images, which show the overlaps in both views, so re-verify with a fresh screenshot before calling the spacing done; the yellow accumulation parallelograms still not done correctly, with the one Rotated Rectangle as a thin green diagonal on the wrong leg and no second parallelogram; the Fib arcs still near vertical in the narrow frame, and radii 400 and 600 both fail there, so fix the geometry, not the radius, by trying the wide Aug 12 to 20 view for the comparison or the Arc tool instead of the Fib Circle tool; the circle bars finished in P8 but with no DAILY CIRCLE, 90M CIRCLE, or MACRO labels and the Q2/.M dot not centred under segment 2; the red step-line too small to read, with the PDF version a long red line with a spike at the right end; FS+ still partly hidden behind a 19 Aug candle; the minus 4 and minus 3.5 STDV marks still absent; the quarter boxes still clipped at the right edge in the narrow view; and the M5 view for 19 Aug still blocked by the Basic plan.
 
 ## Hard limits
 
@@ -444,10 +444,10 @@
 
 - The redraw verification sheet is at workspace/research_notes/alchemist-tradingview-redraw-checklist.md.
 
-- The P7 comparison report is at workspace/research_notes/alchemist-comparison/final/p7-comparison-report.md, with the P6 comparison at workspace/research_notes/alchemist-comparison/final/p6-comparison-report.md.
+- The P7 comparison report is at workspace/research_notes/alchemist-comparison/final/p7-comparison-report.md, with the P6 comparison at workspace/research_notes/alchemist-comparison/final/p6-comparison-report.md, and the P8 comparison report at workspace/research_notes/alchemist-comparison/final/p8-comparison-report.md, which measured 6.5 out of 10 overall, up from 5.8 at P7, with the biggest single-pass gain since P5, driven by the circle bars, the red step-line, and the restored STDV low end.
 
 - The TP audit is at workspace/research_notes/alchemist-tp-audit.md, the text and colour audit is at workspace/research_notes/alchemist-text-colour-audit-p4.md, the missing items audit is at workspace/research_notes/alchemist-missing-audit-p4.md, and the Fib, STDV, and quarterly re-check is at workspace/research_notes/alchemist-fib-stdv-quarterly-p4.md.
 
-- The second PDF merged report is at workspace/research_notes/razyxh-pdf-merged/report.md, and the neat drawing skill sheet is at workspace/research_notes/neat-drawing-skill.md.
+- The second PDF merged report is at workspace/research_notes/razyxh-pdf-merged/report.md, and the neat drawing skill sheet is at workspace/research_notes/razyxh-pdf-merged/neat-drawing-skill.md, and both are also in this repository under references/.
 
 - The source PDF itself is not included in this skill or in the repository, because it is the creator playbook at 22 MB, and the user supplies their own copy.
